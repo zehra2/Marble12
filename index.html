@@ -58,6 +58,18 @@
             box-shadow: 2px 2px 3px #999;
             z-index: 100;
         }
+        
+        #background-video {
+            width: 100vw;
+            height: 120vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
     </style>
 
 </head>
@@ -112,7 +124,7 @@
 
                             <!-- Nav Start -->
                             <div class="classynav">
-                                <ul>
+                                <ul id="nav1">
                                     <li><a class="activehome" href="index.html">Home</a></li>
                                     <li><a href="about.html">About us</a></li>
                                     <li>
@@ -149,15 +161,19 @@
                                     <li><a href="#">Stone Art</a></li>
                                     <li><a href="quaries.html">Quaries & Operations</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
+
+
+
                             </div>
-                            <!-- Nav End -->
+                            </ul>
                         </div>
-
-
-                    </nav>
+                        <!-- Nav End -->
                 </div>
+
+
+                </nav>
             </div>
+        </div>
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
@@ -169,8 +185,10 @@
             <!-- Single Slide -->
             <div class="single-slide bg-img">
                 <!-- Background Image-->
-                <div class="slide-bg-img bg-img " style="background-image: url(img/bg-img/snow-quary.jpg);"></div>
-                <!-- Welcome Text -->
+                <div class="slide-bg-img bg-img "><video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                    <source src="img/bg-img/marble-video.mp4" type="video/mp4">
+                  </video></div>
+                <!-- Welcome Text 
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-lg-9">
@@ -181,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Slide Duration Indicator -->
                 <div class="slide-du-indicator"></div>
             </div>
@@ -189,8 +207,8 @@
             <!-- Single Slide -->
             <div class="single-slide bg-img">
                 <!-- Background Image-->
-                <div class="slide-bg-img bg-img " style="background-image: url(img/bg-img/truckmarble.jpg.jpg);"></div>
-                <!-- Welcome Text -->
+                <div class="slide-bg-img bg-img " style="background-image: url(img/bg-img/bg-1.jpeg);"></div>
+                <!-- Welcome Text 
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-lg-9">
@@ -200,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Slide Duration Indicator -->
                 <div class="slide-du-indicator"></div>
             </div>
@@ -208,8 +226,9 @@
             <!-- Single Slide -->
             <div class="single-slide bg-img">
                 <!-- Background Image-->
-                <div class="slide-bg-img bg-img " style="background-image: url(img/bg-img/image4.jpeg);"></div>
-                <!-- Welcome Text -->
+                <div class="slide-bg-img bg-img "><video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                    <source src="img/bg-img/quary.mp4" type="video/mp4"></video></div>
+                <!-- Welcome Text
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-lg-9">
@@ -219,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Slide Duration Indicator -->
                 <div class="slide-du-indicator"></div>
             </div>
@@ -228,7 +247,7 @@
             <div class="single-slide bg-img">
                 <!-- Background Image-->
                 <div class="slide-bg-img bg-img " style="background-image: url(img/bg-img/image3.jpeg);"></div>
-                <!-- Welcome Text -->
+                <!-- Welcome Text 
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-lg-9">
@@ -239,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Slide Duration Indicator -->
                 <div class="slide-du-indicator"></div>
             </div>
@@ -404,23 +423,30 @@
             <!-- Section Heading -->
             <div class="section-heading">
                 <div class="line "></div>
-                <p>Who We Are</p>
+                <p>Why Choose Us</p>
                 <h2 style="font-size: 26px;color: #282a2c; ">Marble Arts have identified new elements in the marble business</h2>
             </div>
-            <h6>Our collection of marble flaunts elegant granite patterns is perfect for remodeling your space and creating a refined ambiance. When you choose Marble Arts, your preference is not only a timeless piece of art, but you are also prioritizing
-                performance, durability, and maintenance for your space to stand out and compliment your lifestyle.</h6>
+            <h6> When you choose Marble Arts, your preference is not only a timeless piece of art, but you are also prioritizing performance, durability, and maintenance for your space to stand out and compliment your lifestyle.we offer our valued customers
+                a variety of reasons for choosing us to supply the necessary goods. </h6>
             <div class="d-flex flex-wrap mt-50 ">
                 <!-- Single Skills Area -->
-                <!-- <div class="single-skils-area mb-70 mr-5 ">
-                    <div id="circle " class="circle " data-value="0.90 ">
-                        <div class="skills-text ">
-                            <span>90%</span>
+                <div class="single-skils-area mb-70 ">
+                    <div class="single-cool-fact d-flex align-items-center mb-100">
+                        <div class="scf-icon">
+                            <i class="icon-wallet"></i>
+                        </div>
+                        <div class="">
+                            <p>We believe in the implementation of cost-effective manufacturing procedures so that we can offer the highest quality goods to our consumers at reasonable prices.</p>
                         </div>
                     </div>
-                    <p>Energy</p>
+
                 </div>
 
-                Single Skills Area -->
+                <!--  Single Skills Area -->
+                <!-- Single Skills Area -->
+
+
+                <!--  Single Skills Area -->
                 <!--  <div class="single-skils-area mb-70 mr-5 ">
                     <div id="circle2 " class="circle " data-value="0.75 ">
                         <div class="skills-text ">
@@ -457,7 +483,8 @@
                     <div class="section-heading text-center mb-30 wow fadeInUp " data-wow-delay="100ms ">
                         <div class="line "></div>
                         <p>Take look at our</p>
-                        <h2> Popular Products</h2>
+                        <h2> Material Selection</h2>
+                        <h6>Get the finest quality natural stone from our extensive collection. Buy rare and unique stones from our product range that will help mesmerizing your eyes.</h6>
                     </div>
                 </div>
             </div>
@@ -507,7 +534,7 @@
                     <div class="single-service-area d-flex wow fadeInUp " data-wow-delay="500ms ">
 
                         <div class="text text-center" id="text">
-                            <h6>China Pink</h6>
+                            <h6>Besham red</h6>
 
                         </div>
                     </div>
@@ -747,6 +774,25 @@
                 placement: "right",
                 container: 'body'
             });
+        });
+
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() > 50) {
+                $(".credit-main-menu").addClass("active");
+                $("#nav1").addClass("active1");
+                $(".logo").hide();
+
+
+
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".credit-main-menu").removeClass("active");
+                $("#nav1").removeClass("active1");
+                $(".logo").show();
+
+
+
+            }
         });
     </script>
 
