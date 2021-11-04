@@ -12,7 +12,7 @@
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
-        $('#creditNav').classyNav();
+        $('#sticker').classyNav();
     }
 
     // :: 3.0 Sliders Active Code
@@ -64,6 +64,7 @@
             scrollText: '<i class="fa fa-angle-up"></i> Top'
         });
     }
+
 
     // :: 5.0 CounterUp Active Code
     if ($.fn.counterUp) {
@@ -167,7 +168,47 @@
         });
     }
 
+    $(function() {
+        $('#sticker').data('size', 'big');
+    });
 
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 0) {
+            if ($('#sticker').data('size') == 'big') {
+                $('#sticker').data('size', 'small');
+                $('#sticker').css("background", '#403e3e');
+                $('.classy-navbar').css("margin-top", "4px");
+
+                $('.logoimage').hide();
+
+                $('.scrollimage').show();
+
+
+
+
+
+
+                $('#sticker').stop().animate({
+                    height: '82px',
+
+                }, 600);
+
+            }
+        } else {
+            if ($('#sticker').data('size') == 'small') {
+                $('#sticker').data('size', 'big');
+                $('#sticker').css("background", "");
+                $('.classy-navbar').css("margin-top", "20px");
+                $('.logoimage').show();
+                $('.scrollimage').hide();
+
+
+                $('#sticker').stop().animate({
+                    height: '80px'
+                }, 600);
+            }
+        }
+    });
 
 
 
@@ -175,5 +216,33 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
+
+
+    $(function() {
+        $('.social a').tooltip({
+            placement: "right ",
+            container: 'body'
+        });
+    });
+
+    // $(window).on("scroll ", function() {
+    ////  if ($(window).scrollTop() > 30) {
+    //  $(".main-menu1 ").addClass("active ");
+    ///   $("#nav1").addClass("active1");
+    //  $(".logo1 ").hide();
+
+
+
+    //} else {
+    //remove the background property so it comes transparent again (defined in your css)
+    //$(".main-menu1 ").removeClass("active");
+    ///  $("#nav1 ").removeClass("active1 ");
+    //  $(".logo1 ").show();
+
+
+
+    //  }
+    // });
+
 
 })(jQuery);
